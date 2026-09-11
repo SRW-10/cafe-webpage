@@ -1,8 +1,79 @@
 <html>
 <head>
 <title>menu page</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<body background= "menu.jpg">
-<header align="center">LET'S SEE WHAT WE GOT!!</header>
+<body class="menu-page">
+<header>LET'S SEE WHAT WE GOT!!</header>
+<main class="menu-content">
+	<section class="menu-gallery" aria-label="Menu photo gallery">
+		<div class="photo-carousel" data-carousel>
+			<button class="carousel-button previous" type="button" aria-label="Previous menu photo">&#8249;</button>
+			<div class="photo-track">
+				<article class="photo-card">
+					<img src="menu.jpg" alt="Cafe menu display">
+					<h2>Our menu</h2>
+				</article>
+				<article class="photo-card">
+					<img src="download.jpeg" alt="Cafe food selection">
+					<h2>Made fresh</h2>
+				</article>
+				<article class="photo-card">
+					<img src="download (2).jpeg" alt="Cafe food and drinks">
+					<h2>Made to enjoy</h2>
+				</article>
+                <article class="photo-card">
+					<img src="download (1).jpeg" alt="Cafe food and drinks">
+					<h2>Made fresh</h2>
+				</article>
+                <article class="photo-card">
+					<img src="download (3).jpeg" alt="Cafe food and drinks">
+					<h2>Made to enjoy</h2>
+				</article>
+                <article class="photo-card">
+					<img src="yumm😋😭.jpeg" alt="Cafe food and drinks">
+					<h2>Made to enjoy</h2>
+				</article>
+			</div>
+			<button class="carousel-button next" type="button" aria-label="Next menu photo">&#8250;</button>
+		</div>
+	</section>
+
+	<section class="menu-list" aria-labelledby="menu-title">
+		<h1 id="menu-title">Find something delicious</h1>
+		<label class="menu-search-label" for="menu-search">Search the menu</label>
+		<input id="menu-search" class="menu-search" data-menu-search type="search" placeholder="Try coffee, cake, sandwich..." autocomplete="off">
+		<div class="menu-suggestions" data-menu-suggestions aria-label="Popular searches"></div>
+		<p class="menu-results" data-menu-results aria-live="polite"></p>
+		<div class="menu-items">
+			<article class="menu-item" data-menu-item data-search="cappuccino coffee hot drink">
+				<h2>Cappuccino</h2>
+				<p>Rich espresso with steamed milk foam.</p>
+				<strong>₹150</strong>
+			</article>
+			<article class="menu-item" data-menu-item data-search="strawberry milkshake shake cold drink">
+				<h2>Strawberry Milkshake</h2>
+				<p>Cold, creamy, and blended with strawberries.</p>
+				<strong>₹120</strong>
+			</article>
+			<article class="menu-item" data-menu-item data-search="cheesecake cake dessert sweet">
+				<h2>Cheesecake</h2>
+				<p>Silky cheesecake with a delicate biscuit base.</p>
+				<strong>₹200</strong>
+			</article>
+			<article class="menu-item" data-menu-item data-search="grilled sandwich sandwich savory snack">
+				<h2>Grilled Sandwich</h2>
+				<p>Toasted bread with a warm, savory filling.</p>
+				<strong>₹180</strong>
+			</article>
+			<article class="menu-item" data-menu-item data-search="pink velvet cake cake dessert sweet">
+				<h2>Pink Velvet Cake</h2>
+				<p>Soft cake with a smooth, lightly sweet finish.</p>
+				<strong>₹250</strong>
+			</article>
+		</div>
+	</section>
+</main>
+<script src="app.js"></script>
 </body>
 </html>

@@ -3,124 +3,13 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soulful Treats Cafe</title>
-    <style>
-        body {
-                       margin: 0;
-            padding: 0;
- font-family:  Lucida Handwriting, cursive;
-}
-        header {
-            background-color: #ffcccb; 
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            color: black;
-            font-size: 2.5em;
-        }
-        nav {
-            background-color: #f8d7da;
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-        }
-        nav a {
-            color: #333; 
-            text-decoration: none;
-            font-size: 1.2em;
-            margin: 0 15px;
-            padding: 8px 15px;
-        }
-        nav a:hover {
-            background-color: #ffb6c1;
-            border-radius: 5px;
-        }
-        section {
-            padding: 20px;
-            text-align: center;
-        }
-        .home{
- margin: 20px auto;
-            max-width: 1500px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 10px;
-        }
-
-
-.menu, .about, .contact,.reviews {
-            margin: 20px auto;
-            max-width: 800px;
-            background-color: #ffffff; /* White content background */
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-        }
-       .home, .menu h2, .about h2, .contact h2,.reviews h3 {
-            color: #d1475d; /* Bold pink color for headings */
-        }
-section.big-deal {
-    background: linear-gradient(
-        rgba(35,43,56,0.9),
-        rgba(35,43,56,0.9)
-    ), url(../images/food-table.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-section.big-deal .timer{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    margin-right:-2rem;
-    margin-bottom:2rem;
-}
-section.big-deal .timer div{
-    margin-right:2rem;
-    background: var(--primary);
-    width:150px;
-    height:150px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-section.big-deal .timer div span:first-child{
-    font-family: "Raleway-semibold";
-    font-size:2.5rem;
-    color:var(--heaven);
-    margin-bottom:0.05rem;
-}
-section.big-deal .timer div span:last-child{
-    font-family: "Raleway-medium";
-    color:var(--heaven);
-}
-        footer {
-            background-color: #ffcccb;
-            text-align: center;
-            padding: 15px 0;
-            margin-top: 20px;
-            color: black;
-        }
-@media (min-width: 992px) {
-    .container {
-      max-width: 960px;
-    }
-  }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-    <body background= "cafeee.jpg"; color: "lightpink";>
+    <body class="home-page">
     <header>
         <h1>Welcome to Soulful Treats Cafe</h1>
+        <p class="opening-status" data-opening-status aria-live="polite"></p>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Switch theme</button>
     </header>
     <nav>
 <a href="#home">Home</a>
@@ -131,8 +20,44 @@ section.big-deal .timer div span:last-child{
     </nav>
 
 <section id="home" class="home">
-        <h1 color= "pink">Craving all these?</h1>
-        <img src="khana.jpg" alt="Delicious Food" width="1300" height="250">
+        <h1>Craving all these?</h1>
+        <div class="photo-carousel" data-carousel aria-label="Cafe photo gallery">
+            <button class="carousel-button previous" type="button" aria-label="Previous photo">&#8249;</button>
+            <div class="photo-track">
+                <article class="photo-card">
+                    <img src="khana.jpg" alt="A selection of cafe food">
+                    <h2>Fresh from the kitchen</h2>
+                    <p>Comforting food made for slow, happy meals.</p>
+                </article>
+                <article class="photo-card">
+                    <img src="download.jpeg" alt="A cafe interior detail">
+                    <h2>A cozy corner</h2>
+                    <p>Settle in with a drink and stay awhile.</p>
+                </article>
+                <article class="photo-card">
+                    <img src="download (1).jpeg" alt="The Soulful Treats Cafe atmosphere">
+                    <h2>Your pink-and-white escape</h2>
+                    <p>A relaxed place to meet friends and unwind.</p>
+                </article>
+                <article class="photo-card">
+                    <img src="download (2).jpeg" alt="Cafe welcome animation">
+                    <h2>A warm welcome</h2>
+                    <p>There is always room for one more at our table.</p>
+                </article>
+                <article class="photo-card">
+                    <img src="download (3).jpeg" alt="Cafe welcome animation">
+                    <h2>get what you love</h2>
+                    <p>tasty treats await you!</p>
+                </article>
+                <article class="photo-card">
+                    <img src="download (4).jpeg" alt="Cafe welcome animation">
+                    <h2>visit once </h2>
+                    <p>try once you visit</p>
+                </article>
+            </div>
+            <button class="carousel-button next" type="button" aria-label="Next photo">&#8250;</button>
+        </div>
+        <p class="carousel-hint">Browse the cafe gallery</p>
 </section>
    <section id="menu" class="menu">
 <p>Don't worry!</p>
@@ -190,6 +115,11 @@ section.big-deal .timer div span:last-child{
 
                     <div class="container">
                         <h1 class="section-heading">REVIEWS</h1>
+                        <div class="review-tabs" role="tablist" aria-label="Reviews options">
+                            <button class="review-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="reviewed-panel" data-review-tab="reviewed-panel">Reviewed</button>
+                            <button class="review-tab" type="button" role="tab" aria-selected="false" aria-controls="post-review-panel" data-review-tab="post-review-panel">Post New</button>
+                        </div>
+                        <div id="reviewed-panel" class="review-tab-panel" role="tabpanel">
                                         <p>July 03, 2024</p>
                                     <h3>By:Tanvi Manusmare </h3>
                                     <p>it has a variety of menu and drinks, and is a good place to hang out with friends.it's a nice place to have food, and  the atmosphere is refreshing.</p>
@@ -202,24 +132,80 @@ and ambience is beautiful n comfortable.should visit!!</p>
 <h3>By:Mrunali Kularkar</h3>
 <p>Well maintained and good experience. It was a wonderful trip to Mumbai and choosing this restaurant was the best one!!
 Must try<p>
+                        <div data-review-list></div>
+                        </div>
+                        <div id="post-review-panel" class="review-tab-panel post-review-panel" role="tabpanel" hidden>
+                    <div class="review-form-wrap">
+                        <h2>Share your experience</h2>
+                        <form class="review-form" data-review-form>
+                            <label for="review-name">Your name</label>
+                            <input type="text" id="review-name" name="review-name" maxlength="40" placeholder="Enter your name" required>
+
+                            <fieldset class="rating-fieldset">
+                                <legend>Your rating</legend>
+                                <div class="star-rating">
+                                    <input type="radio" id="star-5" name="rating" value="5" required>
+                                    <label for="star-5" title="5 stars">&#9733;</label>
+                                    <input type="radio" id="star-4" name="rating" value="4">
+                                    <label for="star-4" title="4 stars">&#9733;</label>
+                                    <input type="radio" id="star-3" name="rating" value="3">
+                                    <label for="star-3" title="3 stars">&#9733;</label>
+                                    <input type="radio" id="star-2" name="rating" value="2">
+                                    <label for="star-2" title="2 stars">&#9733;</label>
+                                    <input type="radio" id="star-1" name="rating" value="1">
+                                    <label for="star-1" title="1 star">&#9733;</label>
+                                </div>
+                            </fieldset>
+
+                            <label for="review-text">Your review</label>
+                            <textarea id="review-text" name="review-text" rows="4" maxlength="400" placeholder="Tell us about your visit" required></textarea>
+                            <button type="submit">Post review</button>
+                        </form>
+                    </div>
+                        </div>
 </section>
     <section id="contact" class="contact">
-        <h2>wanna join in?</h2>
+        <h2>wanna visit us & reserve a table?</h2>
 <h2>contact us</h2>
-        <form>
-            <label for="fname">your Name:</label><br>
-            <input type="text" id="fname" name="fname" size="50" maxlength="30" placeholder="Enter Your Name"><br><br>
+        <h3>Find your comfortable space</h3>
+        <div class="table-wrapper">
+            <table class="space-table">
+                <caption>Seating spaces at Soulful Treats Cafe</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Space</th>
+                        <th scope="col">Seats</th>
+                        <th scope="col">Best for</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cozy corner</td>
+                        <td>2 people</td>
+                        <td>Quiet coffee and conversation</td>
+                    </tr>
+                    <tr>
+                        <td>Window table</td>
+                        <td>2-4 people</td>
+                        <td>Casual meals and desserts</td>
+                    </tr>
+                    <tr>
+                        <td>Friends table</td>
+                        <td>4-6 people</td>
+                        <td>Group visits and celebrations</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <form data-reservation-form>
+            <label for="fname">Your Name:</label><br>
+            <input type="text" id="fname" name="fname" size="50" maxlength="30" placeholder="Enter Your Name" required><br><br>
 
             <label for="cname" type="tel">Contact Number:</label><br>
-            <input type="text" id="cname" name="cname" size="50" maxlength="15" placeholder="Enter Your Contact Number"><br><br>
-<label for="aname">Address:</label><br>
-            <input type="text" id="aname" name="aname" size="50" maxlength="30" placeholder="Enter Your address"><br><br>
+            <input type="tel" id="cname" name="cname" size="50" maxlength="15" placeholder="Enter Your Contact Number" required><br><br>
 
 
-            <label for="dob">Date of Birth:</label><br>
-            <input type="date" id="dob" name="dob"><br><br>
-
-            <label for="city">intrested to join at:</label><br>
+            <label for="city">intrested to visit at:</label><br>
             <select id="city" name="city">
                 <option value="nagpur">Nagpur</option>
                 <option value="mumbai">Mumbai</option>
@@ -235,7 +221,8 @@ Must try<p>
         </form>
     </section>
     <footer>
-        &copy; 2024 Soulful Treats Cafe | Designed with ❤️|sw
+    &copy; Soulful Treats Cafe'24
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
