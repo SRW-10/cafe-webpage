@@ -6,9 +6,7 @@ A static pink-and-white cafe website built with HTML, CSS, JavaScript, and local
 
 Open this file in a browser:
 
-`cafe/first-page/first page.html`
-
-The welcome image is displayed in a vertical scroll frame. The main cafe page is:
+The main cafe page is:
 
 `cafe/main page/soulfultreats.html`
 
@@ -18,10 +16,6 @@ No web server or package installation is required.
 
 ```text
 cafe/
-|- first-page/
-|  |- first page.html
-|  |- first page.jpg
-|  `- style1.css
 `- main page/
 	|- app.js
 	|- style.css
@@ -49,11 +43,8 @@ cafe/
 
 ## Main pages
 
-- `cafe/first-page/first page.html`: scrollable welcome page.
 - `cafe/main page/soulfultreats.html`: cafe home, gallery, menu preview, reviews, reservations, and virtual-tour link.
 - `cafe/main page/menu page.html`: scrollable menu gallery with live search and suggestions.
-- `cafe/main page/startpage2.html`: login-style entry page with client-side validation.
-- `cafe/main page/startpage1.html`: alternate visitor form.
 - `cafe/main page/virtual tour.html`: video tour with browser playback controls and a back button.
 
 ## Interactive features
@@ -72,4 +63,3 @@ cafe/
 - All pages use relative paths and can be opened locally.
 - Reservations, login, and reviews are browser-side demonstrations; no data is sent to a server.
 - Reviews and the selected theme are stored only in the current browser.
-- `startpage1.html` and `startpage1.txt` are older alternate pages and may contain outdated local references.
