@@ -13,7 +13,7 @@ cafe/
 |- first-page/
 |  |- first page.html
 |  `- first page.jpg
-|- other-html/
+|- main page/
 |  |- menu page.html
 |  |- soulfultreats.html
 |  |- startpage1.html
