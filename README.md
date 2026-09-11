@@ -12,35 +12,6 @@ The main cafe page is:
 
 No web server or package installation is required.
 
-## Project structure
-
-```text
-cafe/
-`- main page/
-	|- app.js
-	|- style.css
-	|- menu page.html
-	|- soulfultreats.html
-	|- startpage1.html
-	|- startpage1.txt
-	|- startpage2.html
-	|- virtual tour.html
-	|- cafeee.jpg
-	|- download.jpeg
-	|- download (1).jpeg
-	|- download (2).jpeg
-	|- download (3).jpeg
-	|- download (4).jpeg
-	|- imageee.jpg
-	|- khana.jpg
-	|- menu.jpg
-	`- yumm😋😭.jpeg`
-	|- stars animation.gif
-	|- virtual tour.mp4
-	|- winnie the pooh.gif
-	`- yumm....jpeg
-```
-
 ## Main pages
 
 - `cafe/main page/soulfultreats.html`: cafe home, gallery, menu preview, reviews, reservations, and virtual-tour link.
