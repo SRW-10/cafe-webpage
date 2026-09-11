@@ -1,5 +1,5 @@
 # Soulful Treats Cafe
-A small pink-and-white cafe website made with plain HTML and local media files.
+A small pink-and-white cafe website made with plain HTML,CSS and local media files.
 
 ## Start the site
 Open this file in a browser:
